@@ -1,7 +1,7 @@
 {
   "name": "fast-turtle",
   "version": "1.0.0",
-  "description": "",
+  "description": "Type-conversion at your fingertips.",
   "main": "index.js",
   "type": "commonjs",
   "dependencies": {
@@ -13,5 +13,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wildwolf210/fast-turtle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wildwolf210/fast-turtle/issues"
+  },
+  "homepage": "https://github.com/Wildwolf210/fast-turtle#readme"
 }
