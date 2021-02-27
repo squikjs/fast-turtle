@@ -1,18 +1,16 @@
 {
   "name": "fast-turtle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Type-conversion at your fingertips.",
   "main": "index.js",
   "type": "commonjs",
-  "dependencies": {
-    "typescript": "^4.1.3"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "node index.test.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "squik",
   "license": "ISC",
   "repository": {
     "type": "git",

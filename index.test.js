@@ -1,25 +1,12 @@
-const { Fast_Turtle } = require("./index.js");
-const ft = new Fast_Turtle();
+const ft = require("./index.js");
+const log = (name, value) => {
+  console.log(`${name.toUpperCase()} :- ${value} (type: ${ft.type(value)})`);
+};
 
-let string = "10";
-console.log(ft.number(string)); // 10
-
-let string2 = "8.102";
-console.log(ft.float(string2)); // 8.102
-
-let string3 = "Hello";
-console.log(ft.array(string3)); // [ 'H', 'e', 'l', 'l', 'o' ]
-
-let u = undefined;
-let n = null;
-console.log(ft.isUndefined(u)); // true
-console.log(ft.isNull(n)); // true
-
-
-let number = 1;
-console.log(ft.checkType(number, "number")); // true
-console.log(ft.checkType(number, "string")); // false
-
-
-
-
+log("number", ft.number("10")); // 10
+log("number", ft.float("8.102")); // 8.102
+log("array (will be string)", ft.array("Hello").join(" ")); // [ 'H', 'e', 'l', 'l', 'o' ]
+log("undefined_check", ft.isUndefined(undefined)); // true
+log("null_check", ft.isNull(null)); // true
+log("type_check", ft.check(100, "number")); // true
+log("type_check", ft.check(100, "string")); // false
